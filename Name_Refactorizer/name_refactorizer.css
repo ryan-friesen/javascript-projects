@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Play|Source+Code+Pro:700|Anton|Berkshire+Swash");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #8a5a18;
+}
+
+#wrapper {
+  max-width: 1368px;
+  min-width: 1000px;
+  margin: 20px 5%;
+  border-style: ridge;
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #fed;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px #444;
+  background: linear-gradient(#321, #111);
+}
+
+h1 {
+  font-size: 4.5em;
+  text-align: center;
+  color: #840;
+  font-family: "Berkshire Swash", times;
+  position: relative;
+  transform: translateY(-48px);
+  text-shadow: 2px 2px #540;
+}
+
+#title {
+  width: 80%;
+  height: 100px;
+  min-width: 750px;
+  border-radius: 60px;
+  background: #ed9;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #983;
+  margin: 20px auto;
+}
+
+#input {
+  font-size: 5em;
+  color: #ea5;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  border-style: groove;
+  border-width: 10px;
+  border-color: #fed;
+  text-shadow: 3px 3px #950;
+  border-radius: 50px;
+  padding: 0px 0px 10px 0px;
+  user-select: none;
+  outline: none;
+  margin: 30px 15% 50px 15%;
+  width: 70%;
+  webkit-animation: flicker 15s linear infinite;
+  animation: flicker 15s linear infinite;
+}
+
+#buttonContainer {
+  width: 90%;
+  height: 100px;
+  margin: 0% 5%;
+}
+
+.button {
+  height: 100px;
+  width: 17%;
+  margin-left: 2%;
+  outline: none;
+  user-select: none;
+  font-family: "Source Code Pro", monospace;
+  font-size: 4em;
+  border-radius: 10px;
+  border-style: groove;
+  background: #111;
+  color: #d80;
+  font-weight: bold;
+  border-width: 5px;
+}
+
+.button:active,
+#umlautButton.active {
+  text-shadow: -2px -2px rgba(0, 0, 0, 0.1);
+  color: #111;
+  background: radial-gradient(#d93, #c71);
+  box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
+}
+
+#umlautButton.halfActive {
+  webkit-animation: umlautFlicker 1.5s cubic-bezier(0.6, 0.4, 0.4, 0.6) infinite;
+  animation: umlautFlicker 1.5s cubic-bezier(0.6, 0.4, 0.4, 0.6) infinite;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+@webkit-keyframes flicker {
+  0% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #950;
+  }
+  48% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #b60;
+  }
+  49% {
+    background: radial-gradient(#2b2b1a, #1d1d0c);
+    text-shadow: 3px 3px #b60;
+  }
+  50% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #950;
+  }
+  97% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #950;
+  }
+  98% {
+    background: radial-gradient(#363624, #242412);
+    text-shadow: 3px 3px #c70;
+  }
+  100% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #950;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #950;
+  }
+  48% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #b60;
+  }
+  49% {
+    background: radial-gradient(#2b2b1a, #1d1d0c);
+    text-shadow: 3px 3px #b60;
+  }
+  50% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #950;
+  }
+  97% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #950;
+  }
+  98% {
+    background: radial-gradient(#363624, #242412);
+    text-shadow: 3px 3px #c70;
+  }
+  100% {
+    background: radial-gradient(#332, #221);
+    text-shadow: 3px 3px #950;
+  }
+}
+
+@webkit-keyframes umlautFlicker {
+  0% {
+    background: radial-gradient(#d93, #c71);
+    text-shadow: 3px 3px #950;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
+    color: #111;
+  }
+  46% {
+    background: radial-gradient(#d93, #c71);
+    text-shadow: 3px 3px #950;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
+    color: #111;
+  }
+  50% {
+    background: #111;
+    color: #d80;
+    text-shadow: none;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0);
+  }
+  97% {
+    background: #111;
+    color: #d80;
+    text-shadow: none;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0);
+  }
+  100% {
+    background: radial-gradient(#d93, #c71);
+    text-shadow: 3px 3px #950;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
+    color: #111;
+  }
+}
+
+@keyframes umlautFlicker {
+  0% {
+    background: radial-gradient(#d93, #c71);
+    text-shadow: 3px 3px #950;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
+    color: #111;
+  }
+  46% {
+    background: radial-gradient(#d93, #c71);
+    text-shadow: 3px 3px #950;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
+    color: #111;
+  }
+  50% {
+    background: #111;
+    color: #d80;
+    text-shadow: none;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0);
+  }
+  97% {
+    background: #111;
+    color: #d80;
+    text-shadow: none;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0);
+  }
+  100% {
+    background: radial-gradient(#d93, #c71);
+    text-shadow: 3px 3px #950;
+    box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
+    color: #111;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #wrapper {
+    transform: scale(0.7, 0.7);
+    transform-origin: top;
+    margin-left: clear;
+    margin-right: clear;
+    position: absolute;
+    left: -100px;
+  }
+}
