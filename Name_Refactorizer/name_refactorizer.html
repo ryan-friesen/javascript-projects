@@ -1,4 +1,4 @@
-<!-
+<!Doctype HTML
  * The MIT License
  * Copyright (c) 2018 Ryan Friesen
  *
@@ -19,33 +19,44 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- ->
  
- <!- Author: Ryan Friesen ->
-
-
-<!DOCTYPE html>
+ Author: Ryan Friesen ->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Name Refactorizer</title>
-<link rel="stylesheet" href="name_refactorizer.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="name_refactorizer_bootstrap.css">
 <body onload="enterName();">
-  <div id="wrapper">
-    <div id="title">
+<div class="col-xs-12 col-lg-10 jumbotron jumbotron-flex" id="wrapper">
+<div class="row">
+<div class="col"></div>
+<div id="title" class="col-md-12 col-lg-11">
       <h1>The Name Refactorizer</h1>
-    </div>
-    <input type="text" id="input" value="Enter a Name">
-  <div id="buttonContainer">  
-  <button type="button" class="button" id="vowelUp">V +</button>
-    <button type="button" class="button" id="vowelDown">V -</button>
-    <button type="button" class="button" id="consonantUp">C +</button>
-    <button type="button" class="button" id="consonantDown">C -</button>
-   <button type="button" class="button" id="umlautButton">(Ü)</button>
-  </div>
 </div>
-  <script src="name_refactorizer.js" type="text/javascript"></script>
+<div class="col"></div>
+</div>
+<div class="row">
+<div class="col"></div>
+      <input type="text" id="input" class="col-9" value="Enter a Name" onkeyup="keyUp();">
+	   	<div class="col"></div>
+   </div>
+<div class="row">
+<div class="col"></div>
+    <div id="buttonContainer" class="col-sm-12 col-md-10">
+      <button type="button" class="button" id="vowelUp">V+</button>
+      <button type="button" class="button" id="vowelDown">V-</button>
+      <button type="button" class="button" id="consonantUp">C+</button>
+      <button type="button" class="button" id="consonantDown">C-</button>
+    <button type="button" class="button" id="umlautButton">(Ü)</button>
+    <button type="button" class="button" id="reset">(u)</button>
+	</div>
+	<div class="col"></div>
+	</div>
+</div>
 </body>
+  <script src="name_refactorizer.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </html>
