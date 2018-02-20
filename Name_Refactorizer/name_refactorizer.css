@@ -3,161 +3,211 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #8a5a18;
+  background: #9b701a;
 }
 
 #wrapper {
-  max-width: 1368px;
-  min-width: 1000px;
-  margin: 20px 5%;
-  border-style: ridge;
-  border-width: 10px;
-  border-radius: 20px;
-  border-color: #fed;
-  padding-bottom: 20px;
+
+margin: 30px auto 0px auto;
+position: relative;
+border-bottom: -20px;
   box-shadow: 5px 5px #444;
-  background: linear-gradient(#321, #111);
+  border-width: 8px;
+  border-radius: 20px;
+  border-style: ridge;
+  border-color: #ffe9be;
+  background: radial-gradient(rgba(70, 47, 0, .3) 5%, rgba(70, 47, 0, .9)),
+    url("http://www.slate.fr/sites/default/files/styles/1090x500/public/dune_0.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	user-select: none;
+
+}
+
+#title {
+
+	border-radius: 60px;
+	background: linear-gradient(
+      to right,
+      rgba(240, 224, 144, 0.3) 5%,
+	  rgba(240, 224, 144, 0.1) 50%,
+      rgba(240, 224, 140, 0.3) 95%
+    ),
+    url(title2.jpg);
+	border-width: 6px;
+	border-style: ridge;
+	border-color: #ffe9be;
+	background-size: cover;
+}
+
+#input {
+  font-size: 5em;
+  color: #ddab46;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  border-style: groove;
+  border-width: 6px;
+  border-color: #ffe9be;
+  text-shadow: 3px 3px #a57006;
+  border-radius: 50px;
+  padding: 10px 0px 10px 0px;
+  user-select: none;
+  outline: none;
+  margin: 30px auto;
+  webkit-animation: flicker 15s linear infinite;
+  animation: flicker 15s linear infinite;
 }
 
 h1 {
   font-size: 4.5em;
   text-align: center;
-  color: #840;
+  color: #ffc689;
   font-family: "Berkshire Swash", times;
   position: relative;
-  transform: translateY(-48px);
-  text-shadow: 2px 2px #540;
-}
-
-#title {
-  width: 80%;
-  height: 100px;
-  min-width: 750px;
-  border-radius: 60px;
-  background: #ed9;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #983;
-  margin: 20px auto;
-}
-
-#input {
-  font-size: 5em;
-  color: #ea5;
-  text-align: center;
-  font-family: "Anton", sans-serif;
-  border-style: groove;
-  border-width: 10px;
-  border-color: #fed;
-  text-shadow: 3px 3px #950;
-  border-radius: 50px;
-  padding: 0px 0px 10px 0px;
-  user-select: none;
-  outline: none;
-  margin: 30px 15% 50px 15%;
-  width: 70%;
-  webkit-animation: flicker 15s linear infinite;
-  animation: flicker 15s linear infinite;
+  text-shadow: 2px 2px #462605;
 }
 
 #buttonContainer {
-  width: 90%;
-  height: 100px;
-  margin: 0% 5%;
+
+  left: 1%;
+
 }
 
 .button {
+  
+  position: relative;
   height: 100px;
-  width: 17%;
-  margin-left: 2%;
   outline: none;
   user-select: none;
   font-family: "Source Code Pro", monospace;
-  font-size: 4em;
+  font-size: 3em;
   border-radius: 10px;
   border-style: groove;
+  border-color: #ffe9be;
   background: #111;
   color: #d80;
   font-weight: bold;
-  border-width: 5px;
+  border-width: 4px;
+  margin: 0% 1%;
+  width: 14%;
 }
 
 .button:active,
-#umlautButton.active {
-  text-shadow: -2px -2px rgba(0, 0, 0, 0.1);
+#umlautButton.active,
+#upper-accent:active {
+  text-shadow: -2px -2px rgba(0, 0, 0, 0.2);
   color: #111;
   background: radial-gradient(#d93, #c71);
   box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
 }
 
-#umlautButton.halfActive {
+#reset:active,
+#reset.toggled,
+#upper-accent.active {
+  text-shadow: -2px -2px rgba(0, 0, 0, 0.2);
+  color: #111;
+  background: radial-gradient(#f53, #e42);
+  box-shadow: 3px 3px rgba(256, 80, 48, 0.3);
+}
+
+#umlautButton.halfActive,
+#upper-accent.halfActive {
   webkit-animation: umlautFlicker 1.5s cubic-bezier(0.6, 0.4, 0.4, 0.6) infinite;
   animation: umlautFlicker 1.5s cubic-bezier(0.6, 0.4, 0.4, 0.6) infinite;
 }
 
-.button:hover {
+.button:hover,
+#reset:hover {
   cursor: pointer;
 }
 
-@webkit-keyframes flicker {
-  0% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #950;
-  }
-  48% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #b60;
-  }
-  49% {
-    background: radial-gradient(#2b2b1a, #1d1d0c);
-    text-shadow: 3px 3px #b60;
-  }
-  50% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #950;
-  }
-  97% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #950;
-  }
-  98% {
-    background: radial-gradient(#363624, #242412);
-    text-shadow: 3px 3px #c70;
-  }
-  100% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #950;
-  }
+@media only screen and (max-width: 992px) {
+
+
+#wrapper {
+
+  border-width: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+#input {
+
+  border-width: 5px;
+  font-size: 2.5em;
+
+}
+
+h1 {
+
+font-size: 3em;
+
+}
+
+.button {
+
+  font-size: 2em;
+  border-width: 2px;
+  margin: 0px 1%;
+  width: 13%;
+  height: 80px;
+
+}
+
+}
+
+@media only screen and (max-width: 576px) {
+
+.button {
+
+	font-size: 1.4em;
+
+}
+
 }
 
 @keyframes flicker {
   0% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #950;
+    background: radial-gradient(rgba(52, 52, 32, .96), rgba(32, 32, 16, .96)),
+	url(Screen_background.jpg);
+    text-shadow: 3px 3px #a57006;
   }
   48% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #b60;
+    background: radial-gradient(rgba(52, 52, 32, .96), rgba(32, 32, 16, .96)),
+	url(Screen_background.jpg);
+    text-shadow: 3px 3px #a57006;
   }
   49% {
-    background: radial-gradient(#2b2b1a, #1d1d0c);
-    text-shadow: 3px 3px #b60;
+    background: radial-gradient(rgba(40, 40, 25, .9), rgba(27, 27, 11, .96))
+	url(Screen_background.jpg);
+    text-shadow: 3px 3px #c57048;
   }
   50% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #950;
+    background: radial-gradient(rgba(52, 52, 32, .94), rgba(32, 32, 16, .96)),
+	url(Screen_background.jpg);
+    text-shadow: 3px 3px #a57006;
   }
   97% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #950;
+    background: radial-gradient(rgba(52, 52, 32, .96), rgba(32, 32, 16, .96)),
+	url(Screen_background.jpg);
+    text-shadow: 3px 3px #a57006;
   }
   98% {
-    background: radial-gradient(#363624, #242412);
-    text-shadow: 3px 3px #c70;
+    background: radial-gradient(rgba(52, 52, 20, .96), rgba(36, 36, 18, .96)),
+	url(Screen_background.jpg);
+    text-shadow: 3px 3px #c57048;
   }
   100% {
-    background: radial-gradient(#332, #221);
-    text-shadow: 3px 3px #950;
+    background: radial-gradient(rgba(52, 52, 32, .96), rgba(32, 32, 16, .96)),
+	url(Screen_background.jpg);
+    text-shadow: 3px 3px #a57006;
   }
 }
 
@@ -224,16 +274,5 @@ h1 {
     text-shadow: 3px 3px #950;
     box-shadow: 5px 5px rgba(220, 180, 60, 0.3);
     color: #111;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  #wrapper {
-    transform: scale(0.7, 0.7);
-    transform-origin: top;
-    margin-left: clear;
-    margin-right: clear;
-    position: absolute;
-    left: -100px;
   }
 }
