@@ -1,0 +1,183 @@
+/* paletton.com source: http://paletton.com/#uid=50K0-0kq7skeKO4kLyusOk1CH7D */
+
+@import url("https://fonts.googleapis.com/css?family=Prosto+One|Basic");
+
+body {
+
+  background: #3D2400;
+
+}
+
+footer {
+
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: 'Basic', times;
+
+}
+
+.jumbotron {
+  text-align: center;
+  background-size: cover;
+  -webkit-animation: jumbotronAnimate 20s linear infinte;
+  animation: jumbotronAnimate 20s linear infinite;
+}
+
+.jumbotron h1 {
+  font-size: 4em;
+  color: #111;
+  font-family: "Prosto One", times;
+  font-weight: bold;
+}
+
+#conditions-column {
+  background: #aa4;
+  padding: 20px 0px;
+  background: #A03010;
+}
+
+#almanac-column {
+
+  padding: 20px 0px;
+  background: #A08110;
+  
+}
+
+#forecast-column {
+
+  padding: 20px 0px;
+  background: #A06410;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul h3 {
+  text-align: center;
+  font-family: "Prosto One", times;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+ul h4,
+ul h5  {
+  text-align: center;
+  font-family: 'Basic', times;
+
+}
+
+ul h5 {
+
+  font-size: .9em;
+
+}
+
+ul h6 {
+
+  text-align: center;
+  font-family: 'Basic', times;
+  font-size: .7em;
+
+}
+
+@webkit-keyframes jumbotronAnimate {
+  0% {
+    background: url("http://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_DE_T1__DE_DeathValley_Flippen_1280x642_sized.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  23% {
+    background: url("http://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_DE_T1__DE_DeathValley_Flippen_1280x642_sized.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  25% {
+    background: url("https://lrzx641zf4f141zb9342prt6-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/dantes-view-death-valley-national-park-vista-point.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  48% {
+    background: url("https://lrzx641zf4f141zb9342prt6-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/dantes-view-death-valley-national-park-vista-point.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  50% {
+    background: url("https://www.nps.gov/deva/learn/nature/images/Jan30-5557Kurt-Moses.jpg?maxwidth=1200&maxheight=1200&autorotate=false");
+    background-size: cover;
+    background-position: center;
+  }
+  73% {
+    background: url("https://www.nps.gov/deva/learn/nature/images/Jan30-5557Kurt-Moses.jpg?maxwidth=1200&maxheight=1200&autorotate=false");
+    background-size: cover;
+    background-position: center;
+  }
+  75% {
+    background: url("https://fthmb.tqn.com/ayQhOuO1Tl0i8pCPewxhHD2X5_A=/960x0/filters:no_upscale()/20110210_041-1000x1500-56a3882a5f9b58b7d0d27560.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  98% {
+    background: url("https://fthmb.tqn.com/ayQhOuO1Tl0i8pCPewxhHD2X5_A=/960x0/filters:no_upscale()/20110210_041-1000x1500-56a3882a5f9b58b7d0d27560.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  100% {
+    background: url("http://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_DE_T1__DE_DeathValley_Flippen_1280x642_sized.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@keyframes jumbotronAnimate {
+  0% {
+    background: url("http://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_DE_T1__DE_DeathValley_Flippen_1280x642_sized.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  23% {
+    background: url("http://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_DE_T1__DE_DeathValley_Flippen_1280x642_sized.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  25% {
+    background: url("https://lrzx641zf4f141zb9342prt6-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/dantes-view-death-valley-national-park-vista-point.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  48% {
+    background: url("https://lrzx641zf4f141zb9342prt6-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/dantes-view-death-valley-national-park-vista-point.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  50% {
+    background: url("https://www.nps.gov/deva/learn/nature/images/Jan30-5557Kurt-Moses.jpg?maxwidth=1200&maxheight=1200&autorotate=false");
+    background-size: cover;
+    background-position: center;
+  }
+  73% {
+    background: url("https://www.nps.gov/deva/learn/nature/images/Jan30-5557Kurt-Moses.jpg?maxwidth=1200&maxheight=1200&autorotate=false");
+    background-size: cover;
+    background-position: center;
+  }
+  75% {
+    background: url("https://fthmb.tqn.com/ayQhOuO1Tl0i8pCPewxhHD2X5_A=/960x0/filters:no_upscale()/20110210_041-1000x1500-56a3882a5f9b58b7d0d27560.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  98% {
+    background: url("https://fthmb.tqn.com/ayQhOuO1Tl0i8pCPewxhHD2X5_A=/960x0/filters:no_upscale()/20110210_041-1000x1500-56a3882a5f9b58b7d0d27560.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  100% {
+    background: url("http://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_DE_T1__DE_DeathValley_Flippen_1280x642_sized.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
